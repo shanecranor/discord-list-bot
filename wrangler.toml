@@ -1,0 +1,15 @@
+compatibility_date = "2022-10-20"
+account_id = "your cloudflare account id"
+main = "src/index.ts"
+node_compat = true
+
+[build]
+command = "npm install && npm run build"
+
+[env.test]
+name = "some name"
+workers_dev = true
+
+[env.test.vars]
+APPLICATION_ID = "insert your discord application id"
+PUBLIC_KEY = "insert your discord application public key"
